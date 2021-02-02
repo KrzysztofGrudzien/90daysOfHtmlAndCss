@@ -220,3 +220,161 @@ pre {
 .footer__link {
     font-weight: 700;
 }
+
+/*  --------------------------------  ALL PROJECTS  -------------------------------- */
+/*  if you want use some project, don't forget copy styles below!                    */
+/*  -------------------------------------------------------------------------------- */
+
+/* --- DAY 1 --- */
+/* ALL CODE ABOVE  */
+
+/* --- DAY 2 --- */
+/* ============================== */
+/*       CUSTOM PAGE LOADER       */
+/* ============================== */
+
+.project {
+    align-items: center;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.project--custom-page-loader {
+    border-radius: 50%;
+    height: 60px;
+    position: relative;
+    width: 60px;
+}
+
+.project--custom-page-loader div:nth-child(1) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.project--custom-page-loader div:nth-child(2) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    top: -2px;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.project--custom-page-loader div:nth-child(3) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    top: 9px;
+    left: 95%;
+    transform: translateX(-50%);
+}
+
+.project--custom-page-loader div:nth-child(4) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.project--custom-page-loader div:nth-child(5) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    bottom: -2px;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.project--custom-page-loader div:nth-child(6) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    bottom: 9px;
+    left: 95%;
+    transform: translateX(-50%);
+}
+
+.project--custom-page-loader div:nth-child(7) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
+}
+
+.project--custom-page-loader div:nth-child(8) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    bottom: -1px;
+    right: 58%;
+    transform: translateX(-50%);
+}
+
+.project--custom-page-loader div:nth-child(9) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    bottom: 9px;
+    right: 77%;
+    transform: translateX(-50%);
+}
+
+.project--custom-page-loader div:nth-child(10) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    top: 9px;
+    right: 77%;
+    transform: translateX(-50%);
+}
+
+.project--custom-page-loader div:nth-child(11) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    top: 3px;
+    right: 68%;
+    transform: translateY(-50%);
+}
+
+.project--custom-page-loader div:nth-child(12) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+}
