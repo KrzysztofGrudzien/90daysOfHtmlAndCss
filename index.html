@@ -9,6 +9,11 @@
             integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
             crossorigin="anonymous"
         />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/style.css" />
         <title>90 Days Of HTML and CSS</title>
     </head>
@@ -17,92 +22,120 @@
             <h2 class="navbar__title">Project's navigation</h2>
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a href="#day1" class="navbar__link">Project 1</a>
+                    <a href="#day1" class="navbar__link"
+                        ><span>01.</span>90 Days Of HTML and CSS</a
+                    >
                 </li>
                 <li class="navbar__item">
-                    <a href="#day2" class="navbar__link">Project 2</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#day3" class="navbar__link">Project 3</a>
+                    <a href="#day2" class="navbar__link"
+                        ><span>02.</span>Custom CSS page loader...</a
+                    >
                 </li>
             </ul>
         </nav>
-        <header class="header">
-            <h1 class="header__title">90 Days Of HTML and CSS</h1>
-            <div class="contact">
-                <ul class="contact__list">
-                    <li class="contact__item">
-                        <a href="#" class="contact__link">About me</a>
-                    </li>
-                    <li class="contact__item">
-                        <a href="#" class="contact__link">Contact</a>
-                    </li>
-                    <li class="contact__item">
-                        <a href="#" class="contact__link">GitHub</a>
-                    </li>
-                </ul>
-                <span class="contact__current-day">01.02.2021</span>
-            </div>
-        </header>
-        <div class="hero">
-            <img src="" alt="" class="hero__img" />
-            <h2 class="hero__title">90 Days Of HTML and CSS</h2>
-            <p class="hero__description">
-                Welcome in my project - 90 Days Of HTML and CSS. Basically this
-                project will be developed by 90days. Every day I will try to use
-                my current knowledge of HTML and CSS to build something useful,
-                interesting, simple, and good looking.
-            </p>
+        <div class="container container--main">
+            <header class="header">
+                <h1 class="header__title">90 Days Of HTML and CSS</h1>
+                <div class="contact">
+                    <ul class="contact__list">
+                        <li class="contact__item">
+                            <a
+                                href="http://criscode.eu"
+                                class="contact__link"
+                                target="_blank"
+                                >About me</a
+                            >
+                        </li>
+                        <li class="contact__item">
+                            <a
+                                href="mailto:krzysztof.grudzien.fed@gmail.com"
+                                class="contact__link"
+                                >Contact</a
+                            >
+                        </li>
+                        <li class="contact__item">
+                            <a
+                                href="https://github.com/KrzysztofGrudzien/90daysOfHtmlAndCss"
+                                class="contact__link"
+                                target="_blank"
+                                >GitHub</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <section class="hero">
+                <img
+                    src="./assets/img/task-manager.png"
+                    alt=""
+                    class="hero__img"
+                />
+                <div class="hero__container">
+                    <h2 class="hero__title">
+                        90 Days Of HTML and CSS<br />
+                        <span class="hero__title--thin"
+                            >90 projects for every day</span
+                        >
+                    </h2>
+                    <p class="hero__description">
+                        Welcome in my project -
+                        <strong>90 Days Of HTML and CSS</strong>.<br /><br />
+                        Basically, this project will be develope by 90 days.
+                        Every day I will try to use my current knowledge of HTML
+                        and CSS to build something useful, interesting, simple,
+                        and good looking. So, I am happy I am here because I'm
+                        going to get a lot of knowledge about HTML and CSS. The
+                        most important thing is purely using HTML and CSS only.
+                        No JavaScript, Webpack, npm, Node.js, SASS, CSS
+                        frameworks, and other similar stuff. So if you will see
+                        animations, interactions, and stand-out projects I
+                        guarantee it will be only HTML and CSS.
+                    </p>
+                </div>
+            </section>
+            <main id="main">
+                <div class="container">
+                    <article class="article" id="day1">
+                        <h3 class="article__title">
+                            01. 90 Days of HTML and CSS
+                        </h3>
+                        <div class="article__container">
+                            <p class="article__description">
+                                My first challenge is building this project
+                                which you see currently. In this challenge, I
+                                wanted to build a very simple and clean website
+                                using only HTML structure and CSS styles without
+                                fireworks.
+                            </p>
+                        </div>
+                        <div class="article__container--project">
+                            if you want see the code and styles - go to the
+                            <a
+                                href="https://github.com/KrzysztofGrudzien/90daysOfHtmlAndCss"
+                                class="article__link"
+                                >github repo</a
+                            >
+                        </div>
+                    </article>
+                    <article class="article" id="day2">
+                        <h3 class="article__title">02. custom page loader</h3>
+                        <div class="article__container">
+                            <p class="article__description">
+                                to be countinued ...
+                            </p>
+                        </div>
+                        <div class="article__container--project"></div>
+                    </article>
+                </div>
+            </main>
+            <footer class="footer">
+                <span class="footer__copyright"
+                    >All rights reserved by &copy; 2021
+                    <a href="http://criscode.eu" class="footer__link"
+                        >Krzysztof Grudzień</a
+                    ></span
+                >
+            </footer>
         </div>
-        <main id="main">
-            <div class="container">
-                <article class="article" id="day1">
-                    <h3 class="article__title">custom page loader</h3>
-                    <div class="article__container">
-                        <p class="article__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Aliquid cupiditate natus iste labore explicabo
-                            praesentium libero voluptatum, nemo earum sint
-                            temporibus consequuntur iusto quidem esse ea
-                            eligendi cumque corporis. Temporibus!
-                        </p>
-                        <span class="article__tags"></span>
-                    </div>
-                    <img src="#" alt="" class="article__img" />
-                </article>
-                <article class="article" id="day2">
-                    <h3 class="article__title">custom page loader</h3>
-                    <div class="article__container">
-                        <p class="article__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Aliquid cupiditate natus iste labore explicabo
-                            praesentium libero voluptatum, nemo earum sint
-                            temporibus consequuntur iusto quidem esse ea
-                            eligendi cumque corporis. Temporibus!
-                        </p>
-                        <span class="article__tags"></span>
-                    </div>
-                    <img src="#" alt="" class="article__img" />
-                </article>
-                <article class="article" id="day3">
-                    <h3 class="article__title">custom page loader</h3>
-                    <div class="article__container">
-                        <p class="article__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Aliquid cupiditate natus iste labore explicabo
-                            praesentium libero voluptatum, nemo earum sint
-                            temporibus consequuntur iusto quidem esse ea
-                            eligendi cumque corporis. Temporibus!
-                        </p>
-                        <span class="article__tags"></span>
-                    </div>
-                    <img src="#" alt="" class="article__img" />
-                </article>
-            </div>
-        </main>
-        <footer>
-            All rights reserved by
-            <a href="http://criscode.eu">Krzysztof Grudzień</a>
-        </footer>
     </body>
 </html>
