@@ -340,3 +340,86 @@ pre {
         transform: rotate(-360deg);
     }
 }
+
+/* --- DAY 3 --- */
+/* ============================== */
+/*         HOVER GALLERY          */
+/* ============================== */
+
+.project {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 20rem;
+}
+
+.project__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    height: 70rem;
+    width: 80rem;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.project__gallery img {
+    border: 1rem solid var(--color-white);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.project__gallery div {
+    background: var(--color-primary);
+    background-position: center center;
+    background-size: cover;
+    border: solid 0.5rem var(--color-white);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.project__gallery div:nth-child(1) {
+    background-image: url('../assets/img/image1.jpg');
+}
+
+.project__gallery div:nth-child(1):hover ~ img:nth-of-type(1),
+.project__gallery div:nth-child(2):hover ~ img:nth-of-type(2),
+.project__gallery div:nth-child(3):hover ~ img:nth-of-type(3),
+.project__gallery div:nth-child(4):hover ~ img:nth-of-type(4),
+.project__gallery div:nth-child(5):hover ~ img:nth-of-type(5),
+.project__gallery div:nth-child(6):hover ~ img:nth-of-type(6) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.project__gallery div:nth-child(2) {
+    background-image: url('../assets/img/image2.jpg');
+}
+
+.project__gallery div:nth-child(3) {
+    background-image: url('../assets/img/image3.jpg');
+}
+
+.project__gallery div:nth-child(4) {
+    background-image: url('../assets/img/image4.jpg');
+    object-fit: contain;
+}
+
+.project__gallery div:nth-child(5) {
+    background-image: url('../assets/img/image5.jpg');
+}
+
+.project__gallery div:nth-child(6) {
+    background-image: url('../assets/img/image6.jpg');
+}
+
+/*  */
