@@ -199,6 +199,10 @@ a {
     color: var(--color-secondary);
 }
 
+.article__description {
+    line-height: 2.8rem;
+}
+
 .article__container--project {
     margin: 2rem 0;
 }
