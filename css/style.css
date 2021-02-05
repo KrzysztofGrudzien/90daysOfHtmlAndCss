@@ -422,4 +422,123 @@ pre {
     background-image: url('../assets/img/image6.jpg');
 }
 
-/*  */
+/* --- DAY 4 --- */
+/* ============================== */
+/*     CHECKBOX BURGER ICON       */
+/* ============================== */
+
+.project {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 20rem;
+}
+
+.project__checkbox-burger-icon {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    min-width: 12rem;
+    position: relative;
+}
+
+.project__checkbox-burger-icon input {
+    display: none;
+}
+
+.project__checkbox-burger-icon label {
+    background: transparent;
+    cursor: pointer;
+    height: 6rem;
+    position: absolute;
+    width: 4rem;
+    z-index: 1000;
+}
+
+.project__checkbox-burger-icon div:nth-child(3) {
+    height: 4rem;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    width: 6rem;
+    z-index: 0;
+}
+
+.project__checkbox-burger-icon div:nth-child(3)::before {
+    content: 'Open';
+    position: absolute;
+    top: 1rem;
+    transition: top 0.3s ease-in-out;
+    width: 6rem;
+}
+
+.project__checkbox-burger-icon input:checked ~ div:nth-child(3)::before {
+    top: -4rem;
+}
+
+.project__checkbox-burger-icon div:nth-child(3)::after {
+    bottom: -6rem;
+    content: 'Close';
+    position: absolute;
+    transition: bottom 0.3s ease-in-out;
+    width: 6rem;
+}
+
+.project__checkbox-burger-icon input:checked ~ div:nth-child(3)::after {
+    bottom: 1rem;
+}
+
+.project__checkbox-burger-icon div:nth-child(4) {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 4rem;
+}
+
+.project__checkbox-burger-icon div:nth-child(4) span {
+    background-color: var(--color-primary);
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: width 0.3s ease-in-out;
+    width: 3rem;
+}
+
+.project__checkbox-burger-icon input:checked ~ div:nth-child(4) span {
+    width: 0;
+}
+
+.project__checkbox-burger-icon div:nth-child(4) span::before {
+    background-color: var(--color-primary);
+    content: '';
+    left: 0;
+    height: 2px;
+    position: absolute;
+    top: -1rem;
+    transition: transform 0.3s ease-in-out;
+    width: 4rem;
+}
+
+.project__checkbox-burger-icon input:checked ~ div:nth-child(4) span::before {
+    transform: rotate(135deg);
+    top: 0;
+}
+
+.project__checkbox-burger-icon div:nth-child(4) span::after {
+    background-color: var(--color-primary);
+    bottom: -1rem;
+    content: '';
+    left: 0;
+    height: 2px;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+    width: 4rem;
+}
+
+.project__checkbox-burger-icon input:checked ~ div:nth-child(4) span::after {
+    transform: rotate(-135deg);
+    top: 0;
+}
