@@ -199,6 +199,10 @@ a {
     color: var(--color-secondary);
 }
 
+.article__description {
+    line-height: 2.8rem;
+}
+
 .article__container--project {
     margin: 2rem 0;
 }
@@ -542,3 +546,230 @@ pre {
     transform: rotate(-135deg);
     top: 0;
 }
+
+/* --- DAY 5 --- */
+/* ============================== */
+/*     CUSTOM HOVER TOOLTIP       */
+/* ============================== */
+
+.project {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 20rem;
+}
+
+.project__custom-hover-tooltip {
+    height: 10rem;
+    position: relative;
+    width: 10rem;
+}
+
+.project__custom-hover-tooltip i {
+    font-size: 5rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project__custom-hover-tooltip div:nth-of-type(1) {
+    background-color: var(--color-grey);
+    border: solid 1px var(--color-navy);
+    border-radius: 50%;
+    height: 1rem;
+    position: relative;
+    transform: translate(4.5rem, 4.5rem);
+    width: 1rem;
+}
+
+.project__custom-hover-tooltip div:nth-of-type(1)::after {
+    animation: scale-sygnal 0.8s ease-in-out infinite backwards;
+    background-color: var(--color-grey);
+    border: solid 1px var(--color-navy);
+    border-radius: 50%;
+    content: '';
+    height: 1rem;
+    left: 0;
+    margin-left: -1rem;
+    position: absolute;
+    top: 0;
+    width: 1rem;
+    z-index: -1;
+}
+
+.project__custom-hover-tooltip div:nth-of-type(1)::before {
+    animation: scale-sygnal 0.8s 0.2s ease-in-out infinite backwards;
+    background-color: var(--color-grey);
+    border: solid 1px var(--color-navy);
+    border-radius: 50%;
+    content: '';
+    height: 1rem;
+    left: 0;
+    margin-left: -1rem;
+    position: absolute;
+    top: 0;
+    width: 1rem;
+    z-index: -2;
+}
+
+@keyframes scale-sygnal {
+    0% {
+        transform: scale(1);
+        left: 1rem;
+
+        opacity: 1;
+    }
+    100% {
+        transform: scale(8);
+        left: 1rem;
+
+        opacity: 0;
+    }
+}
+
+/* CUSTOM HOVER TOOLTIP - TOP  */
+
+/* .project__custom-hover-tooltip div:nth-of-type(2) { */
+/* border-radius: 0.5rem; */
+/* background-color: var(--color-primary); */
+/* color: var(--color-white); */
+/* top: -12rem; */
+/* min-height: 7rem; */
+/* left: -5rem; */
+/* position: relative; */
+/* padding: 1rem; */
+/* pointer-events: none; */
+/* opacity: 0; */
+/* transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; */
+/* width: 20rem; */
+/* } */
+/*  */
+/* .project__custom-hover-tooltip div:nth-of-type(2)::after { */
+/* border-left: 1rem solid transparent; */
+/* border-right: 1rem solid transparent; */
+/* border-top: 1rem solid var(--color-primary); */
+/* bottom: -0.8rem; */
+/* content: ''; */
+/* height: 0; */
+/* left: 50%; */
+/* position: absolute; */
+/* transform: translateX(-50%); */
+/* width: 0; */
+/* } */
+/*  */
+/* .project__custom-hover-tooltip:hover div:nth-of-type(2) { */
+/* opacity: 1; */
+/* top: -8rem; */
+/* } */
+/*  */
+/*  CUSTOM HOVER TOOLTIP - BOTTOM    */
+
+/* .project__custom-hover-tooltip div:nth-of-type(2) { */
+/* border-radius: 0.5rem; */
+/* background-color: var(--color-primary); */
+/* color: var(--color-white); */
+/* bottom: -12rem; */
+/* min-height: 7rem; */
+/* left: -5rem; */
+/* position: relative; */
+/* padding: 1rem; */
+/* pointer-events: none; */
+/* opacity: 0; */
+/* transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out; */
+/* width: 20rem; */
+/* } */
+/*  */
+/* .project__custom-hover-tooltip div:nth-of-type(2)::after { */
+/* border-left: 1rem solid transparent; */
+/* border-right: 1rem solid transparent; */
+/* border-bottom: 1rem solid var(--color-primary); */
+/* top: -0.8rem; */
+/* content: ''; */
+/* height: 0; */
+/* left: 50%; */
+/* position: absolute; */
+/* transform: translateX(-50%); */
+/* width: 0; */
+/* } */
+/*  */
+/* .project__custom-hover-tooltip:hover div:nth-of-type(2) { */
+/* opacity: 1; */
+/* bottom: -8rem; */
+/* } */
+
+/*  CUSTOM HOVER TOOLTIP - LEFT    */
+
+/* .project__custom-hover-tooltip div:nth-of-type(2) { */
+/* border-radius: 0.5rem; */
+/* background-color: var(--color-primary); */
+/* color: var(--color-white); */
+/* bottom: -0.7rem; */
+/* min-height: 7rem; */
+/* left: -21rem; */
+/* position: relative; */
+/* padding: 1rem; */
+/* pointer-events: none; */
+/* opacity: 0; */
+/* transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out; */
+/* width: 20rem; */
+/* } */
+/*  */
+/* .project__custom-hover-tooltip div:nth-of-type(2)::after { */
+/* border-top: 1rem solid transparent; */
+/* border-bottom: 1rem solid transparent; */
+/* border-left: 1rem solid var(--color-primary); */
+/* top: 50%; */
+/* content: ''; */
+/* height: 0; */
+/* right: -0.8rem; */
+/* position: absolute; */
+/* transform: translateY(-50%); */
+/* width: 0; */
+/* } */
+/*  */
+/* .project__custom-hover-tooltip:hover div:nth-of-type(2) { */
+/* opacity: 1; */
+/* left: -18rem; */
+/* } */
+
+/*  CUSTOM HOVER TOOLTIP - RIGHT    */
+
+.project__custom-hover-tooltip div:nth-of-type(2) {
+    border-radius: 0.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    bottom: -0.7rem;
+    min-height: 7rem;
+    right: -12rem;
+    position: relative;
+    padding: 1rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    width: 20rem;
+}
+
+.project__custom-hover-tooltip div:nth-of-type(2)::after {
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-right: 1rem solid var(--color-primary);
+    top: 50%;
+    content: '';
+    height: 0;
+    left: -0.8rem;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 0;
+}
+
+.project__custom-hover-tooltip:hover div:nth-of-type(2) {
+    opacity: 1;
+    right: -8rem;
+}
+
+/* --- DAY 6 --- */
+/* ============================== */
+/*    CUSTOM SEND MAIL BUTTON     */
+/* ============================== */

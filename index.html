@@ -14,6 +14,12 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="css/style.css" />
         <title>90 Days Of HTML and CSS</title>
     </head>
@@ -44,6 +50,11 @@
                 <li class="navbar__item">
                     <a href="#day5" class="navbar__link"
                         ><span>05.</span>Custom hover tooltip</a
+                    >
+                </li>
+                <li class="navbar__item">
+                    <a href="#day6" class="navbar__link"
+                        ><span>06.</span>Custom send mail button</a
                     >
                 </li>
             </ul>
@@ -297,6 +308,45 @@
                     </article>
                     <article class="article" id="day5">
                         <h3 class="article__title">05. custom hover tooltip</h3>
+                        <div class="article__container">
+                            <p class="article__description">
+                                The fundamental idea is to hover on the icon and
+                                the tooltip should be show up from different
+                                sides. I didn't use many classes for different
+                                directions. So, in the css styles - there is a
+                                special section with different types of
+                                behavior. Most code have been commented but only
+                                one type of direction is uncommented. You can
+                                choose your type.
+                            </p>
+                        </div>
+                        <div class="article__container--project">
+                            <div class="project">
+                                <div class="project__custom-hover-tooltip">
+                                    <div></div>
+                                    <i class="fas fa-mobile"></i>
+                                    <div>
+                                        Hi, I'm Krzysztof - a fun of css tricks
+                                    </div>
+                                </div>
+                            </div>
+                            <pre>
+&lt;div&nbsp;class="project"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="project__custom-hover-tooltip"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class="fas&nbsp;fa-mobile"&gt;&lt;/i&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi,&nbsp;I'm&nbsp;Krzysztof&nbsp;-&nbsp;a&nbsp;fun&nbsp;of&nbsp;css&nbsp;tricks<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&lt;/div&gt;
+                            </pre>
+                        </div>
+                    </article>
+                    <article class="article" id="day6">
+                        <h3 class="article__title">
+                            06. custom send mail button
+                        </h3>
                         <div class="article__container">
                             <p class="article__description"></p>
                         </div>
