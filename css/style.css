@@ -1127,3 +1127,127 @@ pre {
     margin-top: -1rem;
     opacity: 1;
 }
+
+/* --- DAY 8 --- */
+/* ================================ */
+/*    CUSTOM TOGGLE RADIO BUTTONS   */
+/* ================================ */
+
+.project {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 20rem;
+}
+
+.project__toggle-radio-buttons {
+    min-width: 15rem;
+    min-height: 10rem;
+}
+
+.project__toggle-radio-buttons div {
+    align-items: center;
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.project__toggle-radio-buttons div:nth-child(1),
+.project__toggle-radio-buttons div:nth-child(2),
+.project__toggle-radio-buttons div:nth-child(3) {
+    position: relative;
+}
+
+.project__toggle-radio-buttons div:nth-child(1) input,
+.project__toggle-radio-buttons div:nth-child(2) input,
+.project__toggle-radio-buttons div:nth-child(3) input {
+    display: none;
+}
+
+.project__toggle-radio-buttons div:nth-child(1) label,
+.project__toggle-radio-buttons div:nth-child(2) label,
+.project__toggle-radio-buttons div:nth-child(3) label {
+    background-color: transparent;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.project__toggle-radio-buttons div:nth-child(1) div,
+.project__toggle-radio-buttons div:nth-child(2) div,
+.project__toggle-radio-buttons div:nth-child(3) div {
+    border: 1px solid var(--color-secondary);
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 4rem;
+}
+
+.project__toggle-radio-buttons div:nth-child(1) div {
+    border: 1px solid rgb(140, 187, 45);
+}
+
+.project__toggle-radio-buttons div:nth-child(3) div {
+    border: 1px solid rgb(255, 156, 25);
+}
+
+.project__toggle-radio-buttons div:nth-child(1) ~ span,
+.project__toggle-radio-buttons div:nth-child(2) ~ span,
+.project__toggle-radio-buttons div:nth-child(3) ~ span {
+    margin-left: 1rem;
+}
+
+.project__toggle-radio-buttons div:nth-child(1) div:nth-of-type(1) span,
+.project__toggle-radio-buttons div:nth-child(2) div:nth-of-type(1) span,
+.project__toggle-radio-buttons div:nth-child(3) div:nth-of-type(1) span {
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+    background-color: var(--color-white);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    display: block;
+    height: 1.7rem;
+    left: -2px;
+    position: absolute;
+    top: -2px;
+    transition: left 0.3s ease-in-out;
+    width: 1.7rem;
+}
+
+.project__toggle-radio-buttons div:nth-child(1) div:nth-of-type(1) span {
+    background-color: rgb(140, 187, 45);
+}
+
+.project__toggle-radio-buttons div:nth-child(2) div:nth-of-type(1) span {
+    background-color: var(--color-secondary);
+}
+
+.project__toggle-radio-buttons div:nth-child(3) div:nth-of-type(1) span {
+    background-color: rgb(255, 156, 25);
+}
+
+.project__toggle-radio-buttons
+    div:nth-child(1)
+    input:checked
+    ~ div:nth-of-type(1)
+    span:first-child {
+    left: 2.3rem;
+}
+
+.project__toggle-radio-buttons
+    div:nth-child(2)
+    input:checked
+    ~ div:nth-of-type(1)
+    span:first-child {
+    left: 2.3rem;
+}
+
+.project__toggle-radio-buttons
+    div:nth-child(3)
+    input:checked
+    ~ div:nth-of-type(1)
+    span:first-child {
+    left: 2.3rem;
+}

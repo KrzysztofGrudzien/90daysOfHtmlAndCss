@@ -67,6 +67,11 @@
                         ><span>08.</span>Custom toggle radio buttons</a
                     >
                 </li>
+                <li class="navbar__item">
+                    <a href="#day9" class="navbar__link"
+                        ><span>09.</span>Custom switched labels</a
+                    >
+                </li>
             </ul>
         </nav>
         <div class="container container--main">
@@ -359,7 +364,10 @@
                             06. custom send mail button
                         </h3>
                         <div class="article__container">
-                            <p class="article__description">Sending email button with animated content when user clicks the button</p>
+                            <p class="article__description">
+                                Sending email button with animated content when
+                                user clicks the button
+                            </p>
                         </div>
                         <div class="article__container--project">
                             <div class="project">
@@ -409,7 +417,10 @@
                             07. custom clicked circle navigation
                         </h3>
                         <div class="article__container">
-                            <p class="article__description">Different approach to the navigation on the websites.</p>
+                            <p class="article__description">
+                                Different approach to the navigation on the
+                                websites.
+                            </p>
                         </div>
                         <div class="article__container--project">
                             <div class="project">
@@ -463,10 +474,92 @@
                         </div>
                         <div class="article__container--project">
                             <div class="project">
+                                <div class="project__toggle-radio-buttons">
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="olive"
+                                            name="theme"
+                                            checked
+                                        />
+                                        <label for="olive"></label>
+                                        <div><span></span></div>
+                                        <span>olive</span>
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="blue"
+                                            name="theme"
+                                        />
+                                        <label for="blue"></label>
+                                        <div><span></span></div>
+                                        <span>blue</span>
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="orange"
+                                            name="theme"
+                                        />
+                                        <label for="orange"></label>
+                                        <div><span></span></div>
+                                        <span>orange</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre>
+&lt;div&nbsp;class="project"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="project__toggle-radio-buttons"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="radio"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="olive"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="theme"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;checked<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;for="olive"&gt;&lt;/label&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;olive&lt;/span&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="radio"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="blue"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="theme"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;for="blue"&gt;&lt;/label&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;blue&lt;/span&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="radio"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="orange"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="theme"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;for="orange"&gt;&lt;/label&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;orange&lt;/span&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&lt;/div&gt;
                             </pre>
                         </div>
                     </article>
-
+                    <article class="article" id="day9">
+                        <h3 class="article__title">
+                            09. Custom switched labels
+                        </h3>
+                        <div class="article__container">
+                            <p class="article__description"></p>
+                        </div>
+                            <div class="project">
+                            </div>
+                        </div>
+                        <pre>
+                        </pre>
+                    </article>
                 </div>
             </main>
             <footer class="footer">
