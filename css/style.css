@@ -1251,3 +1251,132 @@ pre {
     span:first-child {
     left: 2.3rem;
 }
+
+/* --- DAY 9 --- */
+/* ================================ */
+/*      CUSTOM SWITCHED LABELS      */
+/* ================================ */
+
+.project {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 20rem;
+}
+
+.project__custom-switched-labels {
+    color: var(--color-white);
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 80rem;
+}
+
+.project__custom-switched-labels div:last-child {
+    position: relative;
+    width: 100%;
+    min-height: 25rem;
+    overflow: hidden;
+}
+
+.project__custom-switched-labels input {
+    display: none;
+}
+
+.project__custom-switched-labels label {
+    border-radius: 1rem 1rem 0 0;
+    background-color: var(--color-secondary);
+    cursor: pointer;
+    letter-spacing: 2px;
+    min-width: 20rem;
+    padding: 2rem;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project__custom-switched-labels label:hover {
+    transform: translateX(1rem);
+}
+
+.project__custom-switched-labels label:first-of-type {
+    border-radius: 0 1rem 0 0;
+    background-color: var(--color-secondary);
+    z-index: 10;
+}
+
+.project__custom-switched-labels label:nth-of-type(2) {
+    background-color: #d62c2c;
+    margin-left: -1.5rem;
+    z-index: 9;
+}
+
+.project__custom-switched-labels label:nth-of-type(3) {
+    background-color: #a1a10d;
+    margin-left: -1.5rem;
+    z-index: 8;
+}
+
+.project__custom-switched-labels input:checked div:last-child {
+    display: none;
+}
+
+.project__custom-switched-labels div:last-child div {
+    border-radius: 0 1rem 0 0;
+    font-weight: 300;
+    height: 100%;
+    line-height: 2.5rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+.project__custom-switched-labels div:last-child div:nth-of-type(1) {
+    background-color: var(--color-secondary);
+    position: absolute;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+    left: -100%;
+}
+
+.project__custom-switched-labels div:last-child div:nth-of-type(2) {
+    background-color: #d62c2c;
+    position: absolute;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+    left: -100%;
+}
+
+.project__custom-switched-labels div:last-child div:nth-of-type(3) {
+    background-color: #a1a10d;
+    position: absolute;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+    left: -100%;
+}
+
+.project__custom-switched-labels
+    input:nth-of-type(1):checked
+    ~ div:last-child
+    div:nth-of-type(1) {
+    left: 0;
+}
+
+.project__custom-switched-labels
+    input:nth-of-type(2):checked
+    ~ div:last-child
+    div:nth-of-type(2) {
+    left: 0;
+}
+
+.project__custom-switched-labels
+    input:nth-of-type(3):checked
+    ~ div:last-child
+    div:nth-of-type(3) {
+    left: 0;
+}
+
+/* --- DAY 10 --- */
+/* ================================ */
+/*      NAVIGATION WITH IMAGES      */
+/* ================================ */
