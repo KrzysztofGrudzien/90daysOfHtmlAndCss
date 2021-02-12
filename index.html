@@ -1,144 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>90 Days Of HTML and CSS</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>90 Days Of HTML and CSS</title>
-</head>
-
-<body>
-    <nav class="navbar">
-        <h2 class="navbar__title">Project's navigation</h2>
-        <ul class="navbar__list">
-            <li class="navbar__item">
-                <a href="#day1" class="navbar__link"><span>01.</span>90 Days Of HTML and CSS</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#day2" class="navbar__link"><span>02.</span>Custom CSS page loader...</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#day3" class="navbar__link"><span>03.</span>Hover Gallery</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#day4" class="navbar__link"><span>04.</span>Checkbox burger icon</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#day5" class="navbar__link"><span>05.</span>Custom hover tooltip</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#day6" class="navbar__link"><span>06.</span>Custom send mail button</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#day7" class="navbar__link"><span>07.</span>Custom clicked circle navigation</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#day8" class="navbar__link"><span>08.</span>Custom toggle radio buttons</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#day9" class="navbar__link"><span>09.</span>Custom switched labels</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="container container--main">
-        <header class="header">
-            <h1 class="header__title">90 Days Of HTML and CSS</h1>
-            <div class="contact">
-                <ul class="contact__list">
-                    <li class="contact__item">
-                        <a href="http://criscode.eu" class="contact__link" target="_blank">About me</a>
-                    </li>
-                    <li class="contact__item">
-                        <a href="mailto:krzysztof.grudzien.fed@gmail.com" class="contact__link">Contact</a>
-                    </li>
-                    <li class="contact__item">
-                        <a href="https://github.com/KrzysztofGrudzien/90daysOfHtmlAndCss" class="contact__link"
-                            target="_blank">GitHub</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <section class="hero">
-            <img src="./assets/img/task-manager.png" alt="" class="hero__img" />
-            <div class="hero__container">
-                <h2 class="hero__title">
-                    90 Days Of HTML and CSS<br />
-                    <span class="hero__title--thin">90 projects for every day</span>
-                </h2>
-                <p class="hero__description">
-                    Welcome in my project -
-                    <strong>90 Days Of HTML and CSS</strong>.<br /><br />
-                    Basically, this project will be develope by 90 days.
-                    Every day ( without weekends ) I will try to use my
-                    current knowledge about HTML and CSS to build something
-                    useful, interesting, simple, and good looking. So, I am
-                    happy I am here because I'm going to get and pass a lot
-                    of knowledge about HTML and CSS. The most important
-                    thing is purely using HTML and CSS only. No JavaScript,
-                    Webpack, npm, Node.js, SASS, CSS frameworks, and other
-                    similar stuff. So if you will see animations,
-                    interactions, and stand-out projects I guarantee it will
-                    be only HTML and CSS.
-                </p>
-            </div>
-        </section>
-        <main id="main">
-            <div class="container">
-                <article class="article" id="day1">
-                    <h3 class="article__title">
-                        01. 90 Days of HTML and CSS
-                    </h3>
-                    <div class="article__container">
-                        <p class="article__description">
-                            My first challenge is building this project
-                            which you see currently. In this challenge, I
-                            wanted to build a very simple and clean website
-                            using only HTML structure and CSS styles without
-                            fireworks.
-                        </p>
-                    </div>
-                    <div class="article__container--project">
-                        if you want see the code and styles - go to the
-                        <a href="https://github.com/KrzysztofGrudzien/90daysOfHtmlAndCss" class="article__link">github
-                            repo</a>
-                    </div>
-                </article>
-                <article class="article" id="day2">
-                    <h3 class="article__title">02. custom page loader</h3>
-                    <div class="article__container">
-                        <p class="article__description">
-                            A custom animated page loader based on pseudo
-                            selectors.
-                        </p>
-                    </div>
-                    <div class="article__container--project">
-                        <div class="project">
-                            <div class="project__custom-page-loader">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
+    <body>
+        <nav class="navbar">
+            <h2 class="navbar__title">Project's navigation</h2>
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="#day1" class="navbar__link"
+                        ><span>01.</span>90 Days Of HTML and CSS</a
+                    >
+                </li>
+                <li class="navbar__item">
+                    <a href="#day2" class="navbar__link"
+                        ><span>02.</span>Custom CSS page loader...</a
+                    >
+                </li>
+                <li class="navbar__item">
+                    <a href="#day3" class="navbar__link"
+                        ><span>03.</span>Hover Gallery</a
+                    >
+                </li>
+                <li class="navbar__item">
+                    <a href="#day4" class="navbar__link"
+                        ><span>04.</span>Checkbox burger icon</a
+                    >
+                </li>
+                <li class="navbar__item">
+                    <a href="#day5" class="navbar__link"
+                        ><span>05.</span>Custom hover tooltip</a
+                    >
+                </li>
+                <li class="navbar__item">
+                    <a href="#day6" class="navbar__link"
+                        ><span>06.</span>Custom send mail button</a
+                    >
+                </li>
+                <li class="navbar__item">
+                    <a href="#day7" class="navbar__link"
+                        ><span>07.</span>Custom clicked circle navigation</a
+                    >
+                </li>
+                <li class="navbar__item">
+                    <a href="#day8" class="navbar__link"
+                        ><span>08.</span>Custom toggle radio buttons</a
+                    >
+                </li>
+                <li class="navbar__item">
+                    <a href="#day9" class="navbar__link"
+                        ><span>09.</span>Custom switched labels</a
+                    >
+                </li>
+                <li class="navbar__item">
+                    <a href="#day10" class="navbar__link"
+                        ><span>10.</span>Navigation with images</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <div class="container container--main">
+            <header class="header">
+                <h1 class="header__title">90 Days Of HTML and CSS</h1>
+                <div class="contact">
+                    <ul class="contact__list">
+                        <li class="contact__item">
+                            <a
+                                href="http://criscode.eu"
+                                class="contact__link"
+                                target="_blank"
+                                >About me</a
+                            >
+                        </li>
+                        <li class="contact__item">
+                            <a
+                                href="mailto:krzysztof.grudzien.fed@gmail.com"
+                                class="contact__link"
+                                >Contact</a
+                            >
+                        </li>
+                        <li class="contact__item">
+                            <a
+                                href="https://github.com/KrzysztofGrudzien/90daysOfHtmlAndCss"
+                                class="contact__link"
+                                target="_blank"
+                                >GitHub</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <section class="hero">
+                <img
+                    src="./assets/img/task-manager.png"
+                    alt=""
+                    class="hero__img"
+                />
+                <div class="hero__container">
+                    <h2 class="hero__title">
+                        90 Days Of HTML and CSS<br />
+                        <span class="hero__title--thin"
+                            >90 projects for every day</span
+                        >
+                    </h2>
+                    <p class="hero__description">
+                        Welcome in my project -
+                        <strong>90 Days Of HTML and CSS</strong>.<br /><br />
+                        Basically, this project will be develope by 90 days.
+                        Every day ( without weekends ) I will try to use my
+                        current knowledge about HTML and CSS to build something
+                        useful, interesting, simple, and good looking. So, I am
+                        happy I am here because I'm going to get and pass a lot
+                        of knowledge about HTML and CSS. The most important
+                        thing is purely using HTML and CSS only. No JavaScript,
+                        Webpack, npm, Node.js, SASS, CSS frameworks, and other
+                        similar stuff. So if you will see animations,
+                        interactions, and stand-out projects I guarantee it will
+                        be only HTML and CSS.
+                    </p>
+                </div>
+            </section>
+            <main id="main">
+                <div class="container">
+                    <article class="article" id="day1">
+                        <h3 class="article__title">
+                            01. 90 Days of HTML and CSS
+                        </h3>
+                        <div class="article__container">
+                            <p class="article__description">
+                                My first challenge is building this project
+                                which you see currently. In this challenge, I
+                                wanted to build a very simple and clean website
+                                using only HTML structure and CSS styles without
+                                fireworks.
+                            </p>
                         </div>
-                        <pre>
+                        <div class="article__container--project">
+                            if you want see the code and styles - go to the
+                            <a
+                                href="https://github.com/KrzysztofGrudzien/90daysOfHtmlAndCss"
+                                class="article__link"
+                                >github repo</a
+                            >
+                        </div>
+                    </article>
+                    <article class="article" id="day2">
+                        <h3 class="article__title">02. custom page loader</h3>
+                        <div class="article__container">
+                            <p class="article__description">
+                                A custom animated page loader based on pseudo
+                                selectors.
+                            </p>
+                        </div>
+                        <div class="article__container--project">
+                            <div class="project">
+                                <div class="project__custom-page-loader">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <pre>
 &lt;div class=&quot;project&quot;&gt;<br />
     &lt;div class=&quot;project__custom-page-loader&quot;&gt;<br />
         &lt;div&gt;&lt;/div&gt;<br />
@@ -156,36 +208,54 @@
     &lt;/div&gt;<br />
 &lt;/div&gt;
                             </pre>
-                    </div>
-                </article>
-                <article class="article" id="day3">
-                    <h3 class="article__title">03. hover gallery</h3>
-                    <div class="article__container">
-                        <p class="article__description">
-                            A very cool gallery based on grid and css
-                            animations. When you hover on particular
-                            thumbnail image from left side the big one will
-                            show up.
-                        </p>
-                    </div>
-                    <div class="article__container--project">
-                        <div class="project">
-                            <div class="project__gallery">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <img src="./assets/img/image1.jpg" alt="portrait one" />
-                                <img src="./assets/img/image2.jpg" alt="portrait two" />
-                                <img src="./assets/img/image3.jpg" alt="portrait three" />
-                                <img src="./assets/img/image4.jpg" alt="portrait four" />
-                                <img src="./assets/img/image5.jpg" alt="portrait five" />
-                                <img src="./assets/img/image6.jpg" alt="portrait six" />
-                            </div>
                         </div>
-                        <pre>
+                    </article>
+                    <article class="article" id="day3">
+                        <h3 class="article__title">03. hover gallery</h3>
+                        <div class="article__container">
+                            <p class="article__description">
+                                A very cool gallery based on grid and css
+                                animations. When you hover on particular
+                                thumbnail image from left side the big one will
+                                show up.
+                            </p>
+                        </div>
+                        <div class="article__container--project">
+                            <div class="project">
+                                <div class="project__gallery">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <img
+                                        src="./assets/img/image1.jpg"
+                                        alt="portrait one"
+                                    />
+                                    <img
+                                        src="./assets/img/image2.jpg"
+                                        alt="portrait two"
+                                    />
+                                    <img
+                                        src="./assets/img/image3.jpg"
+                                        alt="portrait three"
+                                    />
+                                    <img
+                                        src="./assets/img/image4.jpg"
+                                        alt="portrait four"
+                                    />
+                                    <img
+                                        src="./assets/img/image5.jpg"
+                                        alt="portrait five"
+                                    />
+                                    <img
+                                        src="./assets/img/image6.jpg"
+                                        alt="portrait six"
+                                    />
+                                </div>
+                            </div>
+                            <pre>
 &lt;div class=&quot;project&quot;&gt;<br />
     &lt;div class=&quot;project__gallery&quot;&gt;<br />
         &lt;div&gt;&lt;/div&gt;<br />
@@ -221,30 +291,30 @@
     &lt;/div&gt;<br />
 &lt;/div&gt;
                             </pre>
-                    </div>
-                </article>
-                <article class="article" id="day4">
-                    <h3 class="article__title">04. checkbox burger icon</h3>
-                    <div class="article__container">
-                        <p class="article__description">
-                            A custom burger menu icon with changing icon and
-                            text. This is a very popular approach how to
-                            subtitute the JavaScript using the CSS syntax
-                            only.
-                        </p>
-                    </div>
-                    <div class="article__container--project">
-                        <div class="project">
-                            <div class="project__checkbox-burger-icon">
-                                <input type="checkbox" id="toggle" />
-                                <label for="toggle"></label>
-                                <div></div>
-                                <div>
-                                    <span></span>
+                        </div>
+                    </article>
+                    <article class="article" id="day4">
+                        <h3 class="article__title">04. checkbox burger icon</h3>
+                        <div class="article__container">
+                            <p class="article__description">
+                                A custom burger menu icon with changing icon and
+                                text. This is a very popular approach how to
+                                subtitute the JavaScript using the CSS syntax
+                                only.
+                            </p>
+                        </div>
+                        <div class="article__container--project">
+                            <div class="project">
+                                <div class="project__checkbox-burger-icon">
+                                    <input type="checkbox" id="toggle" />
+                                    <label for="toggle"></label>
+                                    <div></div>
+                                    <div>
+                                        <span></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <pre>
+                            <pre>
 &lt;div&nbsp;class="project"&gt;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="project__checkbox-burger-icon"&gt;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type="checkbox"&nbsp;id="toggle"&nbsp;/&gt;<br />
@@ -256,33 +326,33 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
 &lt;/div&gt;
                             </pre>
-                    </div>
-                </article>
-                <article class="article" id="day5">
-                    <h3 class="article__title">05. custom hover tooltip</h3>
-                    <div class="article__container">
-                        <p class="article__description">
-                            The fundamental idea is to hover on the icon and
-                            the tooltip should be show up from different
-                            sides. I didn't use many classes for different
-                            directions. So, in the css styles - there is a
-                            special section with different types of
-                            behavior. Most code have been commented but only
-                            one type of direction is uncommented. You can
-                            choose your type.
-                        </p>
-                    </div>
-                    <div class="article__container--project">
-                        <div class="project">
-                            <div class="project__custom-hover-tooltip">
-                                <div></div>
-                                <i class="fas fa-mobile"></i>
-                                <div>
-                                    Hi, I'm Krzysztof - a fun of css tricks
+                        </div>
+                    </article>
+                    <article class="article" id="day5">
+                        <h3 class="article__title">05. custom hover tooltip</h3>
+                        <div class="article__container">
+                            <p class="article__description">
+                                The fundamental idea is to hover on the icon and
+                                the tooltip should be show up from different
+                                sides. I didn't use many classes for different
+                                directions. So, in the css styles - there is a
+                                special section with different types of
+                                behavior. Most code have been commented but only
+                                one type of direction is uncommented. You can
+                                choose your type.
+                            </p>
+                        </div>
+                        <div class="article__container--project">
+                            <div class="project">
+                                <div class="project__custom-hover-tooltip">
+                                    <div></div>
+                                    <i class="fas fa-mobile"></i>
+                                    <div>
+                                        Hi, I'm Krzysztof - a fun of css tricks
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <pre>
+                            <pre>
 &lt;div&nbsp;class="project"&gt;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="project__custom-hover-tooltip"&gt;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;/div&gt;<br />
@@ -293,36 +363,39 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
 &lt;/div&gt;
                             </pre>
-                    </div>
-                </article>
-                <article class="article" id="day6">
-                    <h3 class="article__title">
-                        06. custom send mail button
-                    </h3>
-                    <div class="article__container">
-                        <p class="article__description">
-                            Sending email button with animated content when
-                            user clicks the button
-                        </p>
-                    </div>
-                    <div class="article__container--project">
-                        <div class="project">
-                            <div class="project__custom-send-mail-button">
-                                <button>
-                                    <input type="checkbox" id="custom-mail-button" />
-                                    <label for="custom-mail-button"></label>
-                                    <div>
-                                        <span>send message</span>
-                                        <span>message sent</span>
-                                    </div>
-                                    <div>
-                                        <i class="fas fa-shipping-fast"></i>
-                                        <i class="fas fa-smile-wink"></i>
-                                    </div>
-                                </button>
-                            </div>
                         </div>
-                        <pre>
+                    </article>
+                    <article class="article" id="day6">
+                        <h3 class="article__title">
+                            06. custom send mail button
+                        </h3>
+                        <div class="article__container">
+                            <p class="article__description">
+                                Sending email button with animated content when
+                                user clicks the button
+                            </p>
+                        </div>
+                        <div class="article__container--project">
+                            <div class="project">
+                                <div class="project__custom-send-mail-button">
+                                    <button>
+                                        <input
+                                            type="checkbox"
+                                            id="custom-mail-button"
+                                        />
+                                        <label for="custom-mail-button"></label>
+                                        <div>
+                                            <span>send message</span>
+                                            <span>message sent</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-shipping-fast"></i>
+                                            <i class="fas fa-smile-wink"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <pre>
 &lt;div&nbsp;class="project"&gt;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="project__custom-send-mail-button"&gt;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&gt;<br />
@@ -343,36 +416,39 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
 &lt;/div&gt;
                             </pre>
-                    </div>
-                </article>
-                <article class="article" id="day7">
-                    <h3 class="article__title">
-                        07. custom clicked circle navigation
-                    </h3>
-                    <div class="article__container">
-                        <p class="article__description">
-                            Different approach to the navigation on the
-                            websites.
-                        </p>
-                    </div>
-                    <div class="article__container--project">
-                        <div class="project">
-                            <div class="project__custom-circle-navigation">
-                                <label for="circle-navigation"></label>
-                                <input type="checkbox" id="circle-navigation" />
-                                <div></div>
-                                <span></span>
-                                <div></div>
-                                <ul>
-                                    <li><a href="">about</a></li>
-                                    <li><a href="">services</a></li>
-                                    <li><a href="">portfolio</a></li>
-                                    <li><a href="">blog</a></li>
-                                    <li><a href="">contact</a></li>
-                                </ul>
-                            </div>
                         </div>
-                        <pre>
+                    </article>
+                    <article class="article" id="day7">
+                        <h3 class="article__title">
+                            07. custom clicked circle navigation
+                        </h3>
+                        <div class="article__container">
+                            <p class="article__description">
+                                Different approach to the navigation on the
+                                websites.
+                            </p>
+                        </div>
+                        <div class="article__container--project">
+                            <div class="project">
+                                <div class="project__custom-circle-navigation">
+                                    <label for="circle-navigation"></label>
+                                    <input
+                                        type="checkbox"
+                                        id="circle-navigation"
+                                    />
+                                    <div></div>
+                                    <span></span>
+                                    <div></div>
+                                    <ul>
+                                        <li><a href="">about</a></li>
+                                        <li><a href="">services</a></li>
+                                        <li><a href="">portfolio</a></li>
+                                        <li><a href="">blog</a></li>
+                                        <li><a href="">contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <pre>
 &lt;div&nbsp;class="project"&gt;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="project__custom-circle-navigation"&gt;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;for="circle-navigation"&gt;&lt;/label&gt;<br />
@@ -393,39 +469,52 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
 &lt;/div&gt;
                             </pre>
-                    </div>
-                </article>
-                <article class="article" id="day8">
-                    <h3 class="article__title">
-                        08. custom toggle radio buttons
-                    </h3>
-                    <div class="article__container">
-                        <p class="article__description"></p>
-                    </div>
-                    <div class="article__container--project">
-                        <div class="project">
-                            <div class="project__toggle-radio-buttons">
-                                <div>
-                                    <input type="radio" id="olive" name="theme" checked />
-                                    <label for="olive"></label>
-                                    <div><span></span></div>
-                                    <span>olive</span>
-                                </div>
-                                <div>
-                                    <input type="radio" id="blue" name="theme" />
-                                    <label for="blue"></label>
-                                    <div><span></span></div>
-                                    <span>blue</span>
-                                </div>
-                                <div>
-                                    <input type="radio" id="orange" name="theme" />
-                                    <label for="orange"></label>
-                                    <div><span></span></div>
-                                    <span>orange</span>
+                        </div>
+                    </article>
+                    <article class="article" id="day8">
+                        <h3 class="article__title">
+                            08. custom toggle radio buttons
+                        </h3>
+                        <div class="article__container">
+                            <p class="article__description"></p>
+                        </div>
+                        <div class="article__container--project">
+                            <div class="project">
+                                <div class="project__toggle-radio-buttons">
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="olive"
+                                            name="theme"
+                                            checked
+                                        />
+                                        <label for="olive"></label>
+                                        <div><span></span></div>
+                                        <span>olive</span>
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="blue"
+                                            name="theme"
+                                        />
+                                        <label for="blue"></label>
+                                        <div><span></span></div>
+                                        <span>blue</span>
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            id="orange"
+                                            name="theme"
+                                        />
+                                        <label for="orange"></label>
+                                        <div><span></span></div>
+                                        <span>orange</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <pre>
+                            <pre>
 &lt;div&nbsp;class="project"&gt;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="project__toggle-radio-buttons"&gt;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
@@ -461,70 +550,205 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
 &lt;/div&gt;
-                            </pre>
-                    </div>
-                </article>
-                <article class="article" id="day9">
-                    <h3 class="article__title">
-                        09. Custom switched labels
-                    </h3>
-                    <div class="article__container">
-                        <p class="article__description"></p>
-                    </div>
-                    <div class="project">
-                        <div class="project__custom-switched-labels">
-                            <input type="radio" name="custom-switched-labels" id="label-todo" checked>
-                            <label for="label-todo">To DO</label>
-                            <input type="radio" name="custom-switched-labels" id="label-in-progress"> 
-                            <label for="label-in-progress">IN PROGRESS</label>
-                            <input type="radio" name="custom-switched-labels" id="label-done">
-                            <label for="label-done">DONE</label>
-                            <div>
+                        </pre>
+                        </div>
+                    </article>
+                    <article class="article" id="day9">
+                        <h3 class="article__title">
+                            09. Custom switched labels
+                        </h3>
+                        <div class="article__container">
+                            <p class="article__description"></p>
+                        </div>
+                        <div class="project">
+                            <div class="project__custom-switched-labels">
+                                <input
+                                    type="radio"
+                                    name="custom-switched-labels"
+                                    id="label-todo"
+                                    checked
+                                />
+                                <label for="label-todo">To DO</label>
+                                <input
+                                    type="radio"
+                                    name="custom-switched-labels"
+                                    id="label-in-progress"
+                                />
+                                <label for="label-in-progress"
+                                    >IN PROGRESS</label
+                                >
+                                <input
+                                    type="radio"
+                                    name="custom-switched-labels"
+                                    id="label-done"
+                                />
+                                <label for="label-done">DONE</label>
                                 <div>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde omnis atque at
-                                    aut quasi expedita distinctio odit, perferendis doloribus iure, id minus, beatae nam
-                                    cum adipisci repellat? Deleniti, minus.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde omnis atque at
-                                    aut quasi expedita distinctio odit, perferendis doloribus iure, id minus, beatae nam
-                                    cum adipisci repellat? Deleniti, minus.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde omnis atque at
-                                    aut quasi expedita distinctio odit, perferendis doloribus iure, id minus, beatae nam
-                                    cum adipisci repellat? Deleniti, minus.
-                                </div>
-                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea mollitia ad ratione
-                                    obcaecati soluta. Sed necessitatibus neque laboriosam culpa repellat. Facilis sunt
-                                    aut accusamus nemo itaque iusto aspernatur molestias reprehenderit.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde omnis atque at
-                                    aut quasi expedita distinctio odit, perferendis doloribus iure, id minus, beatae nam
-                                    cum adipisci repellat? Deleniti, minus.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde omnis atque at
-                                    aut quasi expedita distinctio odit, perferendis doloribus iure, id minus, beatae nam
-                                    cum adipisci repellat? Deleniti, minus.
-                                </div>
-                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dignissimos
-                                    libero ab sint vero inventore molestiae facere doloribus at possimus. Vitae nemo
-                                    molestias numquam eligendi asperiores nulla ex iusto consequatur?
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde omnis atque at
-                                    aut quasi expedita distinctio odit, perferendis doloribus iure, id minus, beatae nam
-                                    cum adipisci repellat? Deleniti, minus.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde omnis atque at
-                                    aut quasi expedita distinctio odit, perferendis doloribus iure, id minus, beatae nam
-                                    cum adipisci repellat? Deleniti, minus.
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Modi unde omnis atque
+                                        at aut quasi expedita distinctio odit,
+                                        perferendis doloribus iure, id minus,
+                                        beatae nam cum adipisci repellat?
+                                        Deleniti, minus. Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Modi
+                                        unde omnis atque at aut quasi expedita
+                                        distinctio odit, perferendis doloribus
+                                        iure, id minus, beatae nam cum adipisci
+                                        repellat? Deleniti, minus. Lorem ipsum
+                                        dolor sit amet consectetur adipisicing
+                                        elit. Modi unde omnis atque at aut quasi
+                                        expedita distinctio odit, perferendis
+                                        doloribus iure, id minus, beatae nam cum
+                                        adipisci repellat? Deleniti, minus.
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Ea mollitia ad ratione
+                                        obcaecati soluta. Sed necessitatibus
+                                        neque laboriosam culpa repellat. Facilis
+                                        sunt aut accusamus nemo itaque iusto
+                                        aspernatur molestias reprehenderit.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Modi unde omnis atque
+                                        at aut quasi expedita distinctio odit,
+                                        perferendis doloribus iure, id minus,
+                                        beatae nam cum adipisci repellat?
+                                        Deleniti, minus. Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Modi
+                                        unde omnis atque at aut quasi expedita
+                                        distinctio odit, perferendis doloribus
+                                        iure, id minus, beatae nam cum adipisci
+                                        repellat? Deleniti, minus.
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Obcaecati dignissimos
+                                        libero ab sint vero inventore molestiae
+                                        facere doloribus at possimus. Vitae nemo
+                                        molestias numquam eligendi asperiores
+                                        nulla ex iusto consequatur? Lorem ipsum
+                                        dolor sit amet consectetur adipisicing
+                                        elit. Modi unde omnis atque at aut quasi
+                                        expedita distinctio odit, perferendis
+                                        doloribus iure, id minus, beatae nam cum
+                                        adipisci repellat? Deleniti, minus.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Modi unde omnis atque
+                                        at aut quasi expedita distinctio odit,
+                                        perferendis doloribus iure, id minus,
+                                        beatae nam cum adipisci repellat?
+                                        Deleniti, minus.
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-            </div>
-            <pre>
+                        <pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="project"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="project__custom-switched-labels"&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="radio"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="custom-switched-labels"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="label-todo"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;checked<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;for="label-todo"&gt;To&nbsp;DO&lt;/label&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="radio"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="custom-switched-labels"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="label-in-progress"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;for="label-in-progress"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;IN&nbsp;PROGRESS&lt;/label<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="radio"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="custom-switched-labels"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="label-done"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;for="label-done"&gt;DONE&lt;/label&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adipisicing&nbsp;elit.&nbsp;Modi&nbsp;unde&nbsp;omnis&nbsp;atque<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;aut&nbsp;quasi&nbsp;expedita&nbsp;distinctio&nbsp;odit,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perferendis&nbsp;doloribus&nbsp;iure,&nbsp;id&nbsp;minus,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beatae&nbsp;nam&nbsp;cum&nbsp;adipisci&nbsp;repellat?<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deleniti,&nbsp;minus.&nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;amet&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Modi<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unde&nbsp;omnis&nbsp;atque&nbsp;at&nbsp;aut&nbsp;quasi&nbsp;expedita<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distinctio&nbsp;odit,&nbsp;perferendis&nbsp;doloribus<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iure,&nbsp;id&nbsp;minus,&nbsp;beatae&nbsp;nam&nbsp;cum&nbsp;adipisci<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;repellat?&nbsp;Deleniti,&nbsp;minus.&nbsp;Lorem&nbsp;ipsum<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipisicing<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elit.&nbsp;Modi&nbsp;unde&nbsp;omnis&nbsp;atque&nbsp;at&nbsp;aut&nbsp;quasi<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expedita&nbsp;distinctio&nbsp;odit,&nbsp;perferendis<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doloribus&nbsp;iure,&nbsp;id&nbsp;minus,&nbsp;beatae&nbsp;nam&nbsp;cum<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adipisci&nbsp;repellat?&nbsp;Deleniti,&nbsp;minus.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adipisicing&nbsp;elit.&nbsp;Ea&nbsp;mollitia&nbsp;ad&nbsp;ratione<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;obcaecati&nbsp;soluta.&nbsp;Sed&nbsp;necessitatibus<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;neque&nbsp;laboriosam&nbsp;culpa&nbsp;repellat.&nbsp;Facilis<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sunt&nbsp;aut&nbsp;accusamus&nbsp;nemo&nbsp;itaque&nbsp;iusto<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aspernatur&nbsp;molestias&nbsp;reprehenderit.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adipisicing&nbsp;elit.&nbsp;Modi&nbsp;unde&nbsp;omnis&nbsp;atque<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;aut&nbsp;quasi&nbsp;expedita&nbsp;distinctio&nbsp;odit,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perferendis&nbsp;doloribus&nbsp;iure,&nbsp;id&nbsp;minus,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beatae&nbsp;nam&nbsp;cum&nbsp;adipisci&nbsp;repellat?<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deleniti,&nbsp;minus.&nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;amet&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Modi<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unde&nbsp;omnis&nbsp;atque&nbsp;at&nbsp;aut&nbsp;quasi&nbsp;expedita<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distinctio&nbsp;odit,&nbsp;perferendis&nbsp;doloribus<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iure,&nbsp;id&nbsp;minus,&nbsp;beatae&nbsp;nam&nbsp;cum&nbsp;adipisci<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;repellat?&nbsp;Deleniti,&nbsp;minus.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adipisicing&nbsp;elit.&nbsp;Obcaecati&nbsp;dignissimos<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;libero&nbsp;ab&nbsp;sint&nbsp;vero&nbsp;inventore&nbsp;molestiae<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facere&nbsp;doloribus&nbsp;at&nbsp;possimus.&nbsp;Vitae&nbsp;nemo<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;molestias&nbsp;numquam&nbsp;eligendi&nbsp;asperiores<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nulla&nbsp;ex&nbsp;iusto&nbsp;consequatur?&nbsp;Lorem&nbsp;ipsum<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipisicing<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elit.&nbsp;Modi&nbsp;unde&nbsp;omnis&nbsp;atque&nbsp;at&nbsp;aut&nbsp;quasi<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expedita&nbsp;distinctio&nbsp;odit,&nbsp;perferendis<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doloribus&nbsp;iure,&nbsp;id&nbsp;minus,&nbsp;beatae&nbsp;nam&nbsp;cum<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adipisci&nbsp;repellat?&nbsp;Deleniti,&nbsp;minus.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adipisicing&nbsp;elit.&nbsp;Modi&nbsp;unde&nbsp;omnis&nbsp;atque<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;aut&nbsp;quasi&nbsp;expedita&nbsp;distinctio&nbsp;odit,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perferendis&nbsp;doloribus&nbsp;iure,&nbsp;id&nbsp;minus,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beatae&nbsp;nam&nbsp;cum&nbsp;adipisci&nbsp;repellat?<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deleniti,&nbsp;minus.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
                         </pre>
-            </article>
-    </div>
-    </main>
-    </div>
-    <footer class="footer">
-        <span class="footer__copyright">All rights reserved by &copy; 2021
-            <a href="http://criscode.eu" class="footer__link">Krzysztof Grudzień</a></span>
-    </footer>
-</body>
-
+                    </article>
+                    <article class="article" id="day9">
+                        <h3 class="article__title">
+                            10. Navigation with images
+                        </h3>
+                        <div class="article__container">
+                            <p class="article__description"></p>
+                        </div>
+                        <div class="project"></div>
+                        <pre></pre>
+                    </article>
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <span class="footer__copyright"
+                >All rights reserved by &copy; 2021
+                <a href="http://criscode.eu" class="footer__link"
+                    >Krzysztof Grudzień</a
+                ></span
+            >
+        </footer>
+    </body>
 </html>
