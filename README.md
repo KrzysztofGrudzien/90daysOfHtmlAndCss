@@ -24,7 +24,7 @@ single line of JS code.
 - How to substitute JS to CSS
 - How to create programming illusion
 - Discovering new features of CSS
-- And so on and so for :)
+- And so on and so forth :)
 ## What you won't learn?
 - JavsScript
 - Webpack
